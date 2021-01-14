@@ -3,6 +3,13 @@ body {
   background-color: black;
 }
 
+.selected {
+  text-decoration: none;
+  border: 1px solid green;
+  border-radius: 4px;
+  background-color: green;
+}
+
 header {
   width: 100%;
 }
