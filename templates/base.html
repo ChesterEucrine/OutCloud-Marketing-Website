@@ -1,26 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 	<head>
+		<meta charset="utf-8">
 		{% block title %}{% endblock %}
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    	<link rel="icon" href="{{ url_for('static', filename='images/cloud.svg') }}" />
 		{% block links %}
 
 		{% endblock %}
 	</head>
 	<body>
 		<header>
-			<!--nav>
-
-	
-			</nav-->
+				<div class="header-image">
+					<a class="" id="home" href="{{ url_for('home') }}"><img src="{{url_for('static', filename='images/otc_logo.jpg')}}" alt="OTC Logo" /><a>
+				</div>
+				<nav>
+					<a id="packages" href="{{ url_for('packages') }}">Packages</a>
+					<a id="guide" href="{{ url_for('guide') }}">Research Guide</a>
+					<a id="team" href="{{ url_for('team') }}">Team</a>
+					<a id="contact" href="{{ url_for('contact') }}">Contact</a>
+				</nav>
 		</header>
+    	<hr />
 		{% block content %}
 
 
 		{% endblock %}
 		<footer>
-
-
+			<a href="https://www.facebook.com/outclouddigitalmarketing/"><figure>
+				<img src="{{url_for('static', filename='images/facebook.svg')}}" alt="Facebook logo" />
+				<figcaption>Facebook</figcaption>
+			</figure></a>
+			<figure>
+				<img src="{{url_for('static', filename='images/instagram.svg')}}" alt="Instagram logo" />
+				<figcaption>Instagram</figcaption>
+			</figure>
+			<figure>
+				<img src="{{url_for('static', filename='images/youtube.svg')}}" alt="Youtube logo" />
+				<figcaption>Youtube</figcaption>
+			</figure>
 		</footer>
+
+    	<script type="text/javascript" src="{{url_for('static', filename='all.js')}}">
+    	</script>
 	</body>
 </html>
 
