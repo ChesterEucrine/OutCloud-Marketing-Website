@@ -26,13 +26,13 @@ header *{
     width: 100px;
 }
 
-a {
+nav a {
   text-decoration: none;
   margin-left: 10px;
   padding: 10px;
 }
 
-a:hover {
+nav a:hover {
   text-decoration: none;
   border: 1px solid green;
   border-radius: 4px;
@@ -47,6 +47,18 @@ video {
   height: 100%;
 }
 
+.container {
+  padding: 2px;
+  margin: 2px;
+  border: 1px solid green;
+}
+
+.step {
+  padding: 2px;
+  margin: 2px;
+  border: 1px solid green;
+}
+
 h2 {
   color: green;
 }
@@ -55,6 +67,11 @@ span {
   text-transform: uppercase;
   color: green;
   font-size: 1.1em;
+}
+
+span.statement {
+  text-transform: none;
+  color: green;
 }
 
 footer {
@@ -70,3 +87,5 @@ figure img{
   height: 25px;
   margin: 4px;
 }
+
+
